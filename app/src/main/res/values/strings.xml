@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BlogApp</string>
+    <string name="PhotoBlog">Photo Blog</string>
+    <string name="accountUsername">Your name</string>
+    <string name="submit">Submit</string>
+    <string name="nameKey">name</string>
+    <string name="imageKey">image</string>
+    <string name="blog_photo">Blog Photo</string>
+    <string name="add_description">Add Description</string>
+    <string name="post">Post</string>
+    <string name="notifications">Notifications</string>
+    <string name="home">Home</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="blog_post_image_view">blog post image view for home</string>
+    <string name="describePostTextView">this is where I am gonna describe my blog post hope you like it, do not hesistate to follow me for more many effective inspirational posts</string>
+</resources>
