@@ -15,4 +15,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="blog_post_image_view">blog post image view for home</string>
     <string name="describePostTextView">this is where I am gonna describe my blog post hope you like it, do not hesistate to follow me for more many effective inspirational posts</string>
+    <string name="comments">Comments:</string>
 </resources>

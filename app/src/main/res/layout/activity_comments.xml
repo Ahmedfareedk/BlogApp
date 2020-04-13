@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommentsActivity">
+
+    <TextView
+        android:id="@+id/comments_title_TV"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/comments"
+        android:textColor="@color/likeBtnGray"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/comments_RV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/comment_ET"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comments_title_TV" />
+
+    <EditText
+        android:id="@+id/comment_ET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="type your comment here"
+        android:textColor="#000"
+        android:textColorHint="@color/likeBtnGray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        android:paddingLeft="8dp"
+        app:layout_constraintRight_toLeftOf="@id/send_comment_btn"
+        app:layout_constraintTop_toBottomOf="@+id/comments_RV" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/comment_ET"
+        app:layout_constraintBottom_toBottomOf="@id/comment_ET"
+        android:src="@drawable/ic_send_black_24dp"
+        android:paddingTop="8dp"
+        android:id="@+id/send_comment_btn"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

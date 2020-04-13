@@ -18,3 +18,5 @@ public class BlogPostId {
         return (T) this;
     }
 }
+
+
