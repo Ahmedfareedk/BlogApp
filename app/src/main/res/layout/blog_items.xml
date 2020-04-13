@@ -39,7 +39,7 @@
             app:layout_constraintTop_toTopOf="@+id/profile_image_of_post" />
 
         <TextView
-            android:id="@+id/post_date_text-view"
+            android:id="@+id/post_date_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Jan 20, 2018"
@@ -96,12 +96,20 @@
             android:id="@+id/likes_counter_TV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:hint="20"
-            android:padding="4dp"
-            app:layout_constraintBottom_toBottomOf="@+id/likeBtn"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintLeft_toLeftOf="@+id/likeBtn"
+            app:layout_constraintTop_toBottomOf="@+id/likeBtn" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/commentImage"
             app:layout_constraintLeft_toRightOf="@id/likeBtn"
-            app:layout_constraintTop_toBottomOf="@+id/post_desc_home" />
+            app:layout_constraintTop_toTopOf="@id/likeBtn"
+            app:layout_constraintBottom_toBottomOf="@id/likeBtn"
+            android:layout_marginLeft="16dp"
+            android:paddingTop="4dp"
+            android:src="@drawable/ic_comment_black_24dp"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

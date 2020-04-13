@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         firestore = FirebaseFirestore.getInstance();
         if (mAuth.getCurrentUser() != null) {
 
-            getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, new HomeFragment()).commit();
+           getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, new HomeFragment()).commit();
             newPostBtn.setOnClickListener(onNewPostBtnClick);
             bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
         }

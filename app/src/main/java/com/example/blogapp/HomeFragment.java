@@ -54,7 +54,6 @@ public class HomeFragment extends Fragment {
 
         if (mAuth.getCurrentUser() != null) {
             firestore = FirebaseFirestore.getInstance();
-
             Query firestoreQuery = firestore.collection("image").orderBy("timestamp", Query.Direction.DESCENDING).limit(3);
             firestoreQuery.addSnapshotListener(new EventListener<QuerySnapshot>() {
             @Override
